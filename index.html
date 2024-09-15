@@ -9,7 +9,6 @@
 
     <!-- visible content goes here -->
 	<h1>CSS Self-Portrait - Harsh Desai </h1>
-    <a href="https://www.figma.com/design/nrMkagyGjK7F5DX039b3NL/Self-Portrait-design---Harsh-Desai?node-id=0-1&node-type=canvas&t=0WmD2wYGpQPeHWHm-0" target="_blank">See the Original Design here!</a>
 	<div class="face"></div>
     <div class="hair_1"></div>
     <div class="hair_2"></div>
@@ -25,10 +24,31 @@
     <div class="mouth"></div>
     <div class="moustache"></div>
     <div class="teeth"></div>
+    <div class="landscape">
+        <div class="link">
+            <a href="https://www.figma.com/design/nrMkagyGjK7F5DX039b3NL/Self-Portrait-design---Harsh-Desai?node-id=0-1&node-type=canvas&t=0WmD2wYGpQPeHWHm-0" target="_blank">See the Original Design here!</a>
+        </div>
+        <div class="Coordinates">
+            <h4 style="vertical-align:top;">Position of Cursor on Page:</h4>
+            <p style="font-size: larger;"><code>PageX:</code><span id="x">n/a</span></p>
+            <p style="font-size: larger;"><code>PageY:</code><span id="y">n/a</span></p>
+        </div>
+    </div>
     
     <!-- load javascript after the page elements render -->
-    <script src="assets/js/main.js">
+    <script >
+        const box = document.querySelector(".landscape");
+        const x = document.getElementById("x");
+        const y = document.getElementById("y");
+    function changeCoordinates(event){
+        x.innerText = event.x;
+        y.innerText = event.y;
+    }
+    box.addEventListener("mousemove", changeCoordinates, false);
+    box.addEventListener("mousecenter", changeCoordinates, false);
+    box.addEventListener("mouseleave", changeCoordinates, false);
 
+    console.log("Used " +document.querySelectorAll("div").length+ "Elements");
     </script>
 </body>
 </html>

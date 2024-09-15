@@ -20,7 +20,7 @@ div{
     height: 120px;
     top:140px;
     left: 250px;
-    border-radius: 0% 0% 0% 60%;
+    border-radius: 10% 30% 0% 60%;
 }
 .hair_2{
     background-color: black;
@@ -108,7 +108,7 @@ div{
 
 .nose{
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    border-radius: 28%;
+    border-radius: 60%;
     height: 65px;
     width: 75px;
     background-color: #d8bbab;
@@ -151,10 +151,30 @@ div{
 }
 .teeth{
     background-color: white;
-    width:100px;
+    width:115px;
     height:10px;
     top: 510px;
-    left: 395px;
+    left: 385px;
+    border-radius: 0% 0% 50% 50%;
 
 }
-
+.Coordinates{
+    width: 200px;
+    height: 100px;
+    top: 200px;
+    left: 1000px;
+    border: 15px solid purple;
+    padding: 50px;
+    margin: 20px;
+    z-index: 4;
+}
+.landscape{
+    width:3000px;
+    height:3000px;
+    top:0px;
+    left:0px;
+}
+.link{
+    top:80px;
+    left: 40px;
+}
